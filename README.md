@@ -1,10 +1,10 @@
-#Http_Resource
+# Http_Resource
 
-##About
+## About
 This library is used to create easy bindings of your flutter/frontend dart application. By default if You have any data model, 
 You can simply add HttpClient bindings and your model will be automatically binded to api endpoints.
 
-##Example
+## Example
 ```
 import 'package:http_resource/http_resource.dart';
 
@@ -56,6 +56,6 @@ void main() async {
 }
 ```  
 
-##Info
+## Info
 This package was made for my own needs, but since I'm repeating this step very often, I've decided to push this as public package.
 Maybe someone will need this too. Any proposals are welcomed.
