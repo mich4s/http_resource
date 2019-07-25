@@ -55,14 +55,19 @@ abstract class HttpClient<T extends Model> {
   }
 
   Future<T> update(T instance, {Map<String, String> headers}) {
-    return http.put("$apiUrl/${instance.identifier}", headers: headers, body: json.encode(instance.fields))
+    return http
+        .put("$apiUrl/${instance.identifier}",
+            headers: headers, body: json.encode(instance.fields))
         .then((http.Response response) {
       this._fillModelProperties(instance, json.decode(response.body));
       return instance;
     });
   }
+
   Future<T> delete(T instance, {Map<String, String> headers}) {
-    return http.put("$apiUrl/${instance.identifier}", headers: headers, body: json.encode(instance.fields))
+    return http
+        .put("$apiUrl/${instance.identifier}",
+            headers: headers, body: json.encode(instance.fields))
         .then((http.Response response) {
       this._fillModelProperties(instance, json.decode(response.body));
       return instance;

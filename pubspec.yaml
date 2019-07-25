@@ -1,10 +1,9 @@
 name: http_resource
-version: 0.1.1
+version: 0.1.2
 description: >-
   This library allows you to simple map your models into crud objects that will automatically update it's values.
 author: Michał Poreda <michal.poreda94@gmail.com>
-# homepage: https://example-pet-store.com/newtify
-# documentation: https://example-pet-store.com/newtify/docs
+homepage: https://github.com/mich4s/http_resource
 environment:
   sdk: '>=2.1.0 <3.0.0'
 dependencies:
