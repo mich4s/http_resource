@@ -1,9 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:json_annotation/json_annotation.dart';
 
-@JsonSerializable()
 abstract class Model<T> {
   dynamic id;
 
